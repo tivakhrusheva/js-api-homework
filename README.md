@@ -11,4 +11,5 @@
 
 ![image](https://github.com/tivakhrusheva/js-api-homework/assets/91075802/fad02f62-9bb9-4fa4-a3d7-26163cbc87cc)
 
+Для передачи уникального айди пользователя между двумя страницами используется стандартный объект **localStorage**.
 ### Скринкаст с примером работы
