@@ -31,3 +31,5 @@
 
 Для передачи уникального айди пользователя между двумя страницами используется стандартный объект **localStorage**.
 ### Скринкаст с примером работы
+
+[link](https://storage.yandexcloud.net/test-bucket-for-uxers/hw-screencast.mkv "link")
