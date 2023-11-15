@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/product-page.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      window.addEventListener('load', () => {
+        // 👇️ for primitive variables
+        const userId = 'userId';
+        localStorage.setItem('userId', userId);
+      });
+    </script>
+  <link rel="shortcut icon" href="../assets/favicon.png"/>
+  <title>E-Commerce</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <header>
+    <div class="product-details-page__wrapper">
+      <div class="top-header">
+        <div id="header-content"></div>
+        <div class="frame-parent">
+          <div class="summer-sale-for-all-swim-suits-parent">
+            <div class="summer-sale-for">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </div>
+            <div class="shopnow">ShopNow</div>
+          </div>
+          <div class="english-parent">
+            <div class="english">English</div>
+            <img class="dropdown-icon" alt="" src="../assets/product_page/dropdown.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+      <div class="menu">
+        <div class="logo-parent">
+          <div class="logo">
+            <b class="exclusive">Exclusive</b>
+          </div>
+          <div class="header-parent" style="cursor: pointer;">
+            <div class="header1" id="headerContainer" style="cursor: pointer;">
+              <div class="home" style="cursor:pointer">Home</div>
+            </div>
+            <div class="header2">
+              <div class="home">Contact</div>
+            </div>
+            <div class="header3">
+              <div class="home">About</div>
+            </div>
+            <div class="header4">
+              <div class="home">Sign Up</div>
+            </div>
+          </div>
+        </div>
+        <div class="search-component-set-parent">
+          <div class="search-component-set">
+            <div class="what-are-you-looking-for-parent">
+              <div class="what-are-you">What are you looking for?</div>
+              <img
+                class="dropdown-icon"
+                alt=""
+                src="../assets/product_page/component-2.svg"
+              />
+            </div>
+          </div>
+          <div class="wishlist-parent">
+            <img class="wishlist-icon" alt="" src="../assets/product_page/wishlist.svg" />
+
+            <img
+              class="cart1-with-buy"
+              alt=""
+              src="../assets/product_page/cart1-with-buy.svg"
+            />
+
+            <img class="wishlist-icon" alt="" src="../assets/product_page/user.svg" />
+          </div>
+        </div>
+      </div>
+      <img
+        class="product-details-page-child"
+        alt=""
+        src="../assets/product_page/line-3.svg"
+      />
+    <div class="products_info">
+      <div class="main_product">
+        <!-- <div class="product_description"></div>
+        <div class="roadmap">
+          <div class="account">Account</div>
+          <img class="roadmap-child" alt="" src="../assets/product_page/line-13.svg" />
+
+          <div class="account">Gaming</div>
+          <img class="roadmap-item" alt="" src="../assets/product_page/line-14.svg" />
+
+          <div class="nothing1">Product</div>
+          <img class="roadmap-item" alt="" src="../assets/product_page/line-14.svg" />
+
+          <div class="nothing1">View Cart</div>
+          <img class="roadmap-child" alt="" src="../assets/product_page/line-13.svg" />
+
+        <div class="english">Havic HV G-92 Gamepad</div>
+        </div> -->
+        <div class="table-div">
+        </div>
+        <script src="../scripts/getRandomItem.js"></script>
+      </div>
+      <div class="colours-parent">
+        <div class="colours">Colours:</div>
+        <div class="four-star-parent">
+          <img
+            class="colour-chnage-child"
+            alt=""
+            src="../assets/product_page/group-1000005935.svg"
+          />
+
+          <div class="colour-chnage-item"></div>
+        </div>
+      </div>
+      <div class="size-parent">
+        <div class="colours">Size:</div>
+        <div class="frame-container">
+          <div class="xs-wrapper" id="xs">
+            <div class="xs">XS</div>
+          </div>
+          <div class="xs-wrapper" id="s">
+            <div class="s">S</div>
+          </div>
+          <div class="m-wrapper" id="m">
+            <div class="m">M</div>
+          </div>
+          <div class="xs-wrapper" id="l">
+            <div class="l">L</div>
+          </div>
+          <div class="xs-wrapper" id="xl">
+            <div class="xl">XL</div>
+          </div>
+          <script>
+            $(function () {
+                $(".xs-wrapper").click(function () {
+                    $(this).css('background-color', '#db4444');
+                    $(this).css('color', '#fafafa');
+                });
+            });
+            </script>
+        </div>
+      </div>
+      <img class="underline-icon" alt="" src="../assets/product_page/underline.svg" />
+
+      <div class="frame-div">
+        <img class="frame-item" alt="" src="../assets/product_page/frame-906.svg" id="add-less"/>
+
+        <div class="wrapper">
+          <div class="div1" id="product-counter">1</div>
+        </div>
+        <img class="frame-inner" alt="" src="../assets/product_page/frame-907.svg" id="add-more"/>
+      </div>
+      <script type="text/javascript">
+        document.getElementById("add-more").onclick = function () {
+            document.getElementById('product-counter').innerHTML = Number(document.getElementById('product-counter').innerHTML) +1
+        };
+        document.getElementById("add-less").onclick = function () {
+          if (Number(document.getElementById('product-counter').innerHTML) == 1) {
+            document.getElementById('product-counter').innerHTML = '1'
+          }
+          else {
+            document.getElementById('product-counter').innerHTML = Number(document.getElementById('product-counter').innerHTML) -1
+        }
+      };
+    </script>
+      <div class="button" id="buy-now">
+        <div class="add-to-cart">Buy Now</div>
+        <script type="module" src="../scripts/addItems.js"></script>
+        <script type="module">
+          import { addItemToBackend } from '../scripts/addItems.js';
+          document.getElementById("buy-now").onclick = function () {
+          const itemN = document.getElementById("product-counter").innerHTML;
+          const itemName = document.getElementById("product-name").innerHTML;
+          const itemPrice = document.getElementById("item-price").innerHTML;
+          const itemUrl = document.getElementById("main-icon").src;
+          const userId = "userId"
+          console.log("itemN: " + itemN + "itemNam: " + itemName + "itemPrice: " + itemPrice)
+          console.log(addItemToBackend(userId, itemName, itemN, itemPrice, itemUrl));
+          //console.log("res: " + res)
+          // location.href = "cart-page.html";
+        }
+
+
+      </script>
+      </div>
+      <img
+        class="product-details-page-item"
+        alt=""
+        src="../assets/product_page/frame-904.svg"
+      />
+
+      <div class="underline-parent">
+        <img class="underline-icon1" alt="" src="../assets/underline1.svg" />
+
+        <div class="icon-delivery-parent">
+          <img class="icon-delivery" alt="" src="../assets/product_page/icondelivery.svg" />
+
+          <div class="free-delivery-parent">
+            <div class="add-to-cart">Free Delivery</div>
+            <div class="enter-your-postal">
+              Enter your postal code for Delivery Availability
+            </div>
+          </div>
+        </div>
+        <div class="icon-return-parent">
+          <img class="icon-delivery" alt="" src="../assets/product_page/iconreturn.svg" />
+
+          <div class="free-delivery-parent">
+            <div class="add-to-cart">Return Delivery</div>
+            <div class="free-30-days-container">
+              Free 30 Days Delivery Returns.
+              <span class="details">Details</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="frame-parent1">
+        <div class="category-rectangle-parent">
+          <div class="category-rectangle">
+            <div class="category-rectangle-child"></div>
+          </div>
+          <div class="related-item">Related Item</div>
+        </div>
+        <div class="cart-with-flat-discount-parent" style="position: absolute; left: 150px;">
+          <div class="cart-with-flat-discount">
+            <div class="discount-percent-parent">
+              <div class="discount-percent">
+                <div class="div2">-40%</div>
+              </div>
+              <div class="fill-heart-parent">
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-heart.svg"
+                />
+
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-eye.svg"
+                />
+              </div>
+              <div class="g92-2-500x500-1-wrapper">
+                <img
+                  class="g92-2-500x500-1-icon"
+                  alt=""
+                  src="../assets/product_page/g922500x500-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="havit-hv-g92-gamepad-parent">
+              <div class="add-to-cart">HAVIT HV-G92 Gamepad</div>
+              <div class="parent">
+                <div class="add-to-cart">$120</div>
+                <div class="div4">$160</div>
+              </div>
+              <div class="five-star-parent">
+                <div class="four-star">
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+                </div>
+                <div class="div5">(88)</div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-with-flat-discount">
+            <div class="discount-percent-parent">
+              <div class="discount-percent">
+                <div class="div2">-35%</div>
+              </div>
+              <div class="rectangle-div"></div>
+              <div class="add-to-cart1">Add To Cart</div>
+              <div class="fill-heart-parent">
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-heart.svg"
+                />
+
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-eye.svg"
+                />
+              </div>
+              <div class="ak-900-01-500x500-1-wrapper">
+                <img
+                  class="ak-900-01-500x500-1-icon"
+                  alt=""
+                  src="../assets/product_page/ak90001500x500-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="havit-hv-g92-gamepad-parent">
+              <div class="add-to-cart">AK-900 Wired Keyboard</div>
+              <div class="parent">
+                <div class="add-to-cart">$960</div>
+                <div class="div4">$1160</div>
+              </div>
+              <div class="five-star-parent">
+                <div class="four-star">
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon4" alt="" src="../assets/product_page/vector1.svg" />
+                </div>
+                <div class="div5">(75)</div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-with-flat-discount">
+            <div class="discount-percent-parent">
+              <div class="discount-percent">
+                <div class="div2">-30%</div>
+              </div>
+              <div class="fill-heart-parent">
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-heart.svg"
+                />
+
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-eye.svg"
+                />
+              </div>
+              <div class="g92-2-500x500-1-wrapper">
+                <img
+                  class="g27cq4-500x500-1-icon"
+                  alt=""
+                  src="../assets/product_page/g27cq4500x500-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="havit-hv-g92-gamepad-parent">
+              <div class="add-to-cart">IPS LCD Gaming Monitor</div>
+              <div class="parent">
+                <div class="add-to-cart">$370</div>
+                <div class="div4">$400</div>
+              </div>
+              <div class="five-star-parent">
+                <div class="four-star">
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+                </div>
+                <div class="div5">(99)</div>
+              </div>
+            </div>
+          </div>
+          <div class="cart">
+            <div class="discount-percent-parent">
+              <div class="fill-heart-parent">
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-heart.svg"
+                />
+
+                <img
+                  class="fill-heart-icon"
+                  alt=""
+                  src="../assets/product_page/fill-eye.svg"
+                />
+              </div>
+              <div class="gammaxx-l240-argb-1-500x500-1-wrapper">
+                <img
+                  class="gammaxx-l240-argb-1-500x500-1-icon"
+                  alt=""
+                  src="../assets/product_page/gammaxxl240argb1500x500-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="free-delivery-parent">
+              <div class="add-to-cart">RGB liquid CPU Cooler</div>
+              <div class="parent">
+                <div class="add-to-cart">$160</div>
+                <div class="div4">$170</div>
+              </div>
+              <div class="five-star-parent">
+                <div class="four-star">
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img class="vector-icon" alt="" src="../assets/product_page/vector.svg" />
+
+                  <img
+                    class="star-half-filled-icon"
+                    alt=""
+                    src="../assets/product_page/starhalffilled.svg"
+                  />
+                </div>
+                <div class="div5">(65)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="footer">
+        <div class="underline-group">
+          <img class="underline-icon2" alt="" src="../assets/underline2.svg" />
+          <div class="frame-wrapper">
+            <div class="icon-copyright-parent">
+              <img
+                class="star-half-filled-icon"
+                alt=""
+                src="../assets/iconcopyright.svg"
+              />
+
+              <div class="exclusivegmailcom">
+                Copyright Rimel 2022. All right reserved
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent2">
+          <div class="frame-parent3">
+            <div class="logo-group">
+              <div class="logo-group">
+                <div class="logo">
+                  <b class="exclusive">Exclusive</b>
+                </div>
+                <div class="subscribe">Subscribe</div>
+              </div>
+              <div class="get-10-off">Get 10% off your first order</div>
+            </div>
+            <div class="send-mail">
+              <div class="enter-your-email">Enter your email</div>
+              <img class="dropdown-icon" alt="" src="../assets/iconsend.svg" />
+            </div>
+          </div>
+          <div class="logo-group">
+            <div class="support">Support</div>
+            <div class="bijoy-sarani-dhaka-dh-1515-parent">
+              <div class="bijoy-sarani-dhaka">
+                111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+              </div>
+              <div class="exclusivegmailcom">exclusive@gmail.com</div>
+              <div class="exclusivegmailcom">+88015-88888-9999</div>
+            </div>
+          </div>
+          <div class="logo-group">
+            <div class="support">Account</div>
+            <div class="bijoy-sarani-dhaka-dh-1515-parent">
+              <div class="exclusivegmailcom">My Account</div>
+              <div class="exclusivegmailcom">Login / Register</div>
+              <div class="exclusivegmailcom">Cart</div>
+              <div class="exclusivegmailcom">Wishlist</div>
+              <div class="exclusivegmailcom">Shop</div>
+            </div>
+          </div>
+          <div class="logo-group">
+            <div class="support">Quick Link</div>
+            <div class="bijoy-sarani-dhaka-dh-1515-parent">
+              <div class="exclusivegmailcom">Privacy Policy</div>
+              <div class="exclusivegmailcom">Terms Of Use</div>
+              <div class="exclusivegmailcom">FAQ</div>
+              <div class="exclusivegmailcom">Contact</div>
+            </div>
+          </div>
+          <div class="logo-group">
+            <div class="logo-group">
+              <div class="support">Download App</div>
+              <div class="save-3-with-app-new-user-only-parent">
+                <div class="save-3-with">Save $3 with App New User Only</div>
+                <div class="summer-sale-for-all-swim-suits-parent">
+                  <div class="qr-code">
+                    <img
+                      class="qrcode-1-icon"
+                      alt=""
+                      src="../assets/qrcode-1@2x.png"
+                    />
+                  </div>
+                  <div class="googleplay-parent">
+                    <img
+                      class="googleplay-icon"
+                      alt=""
+                      src="../assets/googleplay.svg"
+                    />
+
+                    <div class="appstore">
+                      <img
+                        class="download-appstore-icon"
+                        alt=""
+                        src="../assets/downloadappstore@2x.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="icon-facebook-parent">
+              <img
+                class="dropdown-icon"
+                alt=""
+                src="../assets/iconfacebook.svg"
+              />
+
+              <img
+                class="dropdown-icon"
+                alt=""
+                src="../assets/icontwitter.svg"
+              />
+
+              <img
+                class="dropdown-icon"
+                alt=""
+                src="../assets/iconinstagram.svg"
+              />
+
+              <img
+                class="dropdown-icon"
+                alt=""
+                src="../assets/iconlinkedin.svg"
+              />
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      var headerContainer = document.getElementById("headerContainer");
+      if (headerContainer) {
+        headerContainer.addEventListener("click", function (e) {
+          // Please sync "E-Commerce HomePage" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

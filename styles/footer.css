@@ -1,0 +1,287 @@
+.footer {
+    background-color: var(--primary-black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-light);   
+}
+
+.frame-wrapper, .icon-copyright-parent {
+    display: flex;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-copyright-parent {
+    gap: var(--gap-7xs);
+}
+
+.star-half-filled-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+  
+.exclusivegmailcom {
+    position: relative;
+    line-height: 24px;
+    bottom: 5%;
+}
+
+.frame-parent2,
+.icon-facebook-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+
+.frame-parent2 {
+  position: absolute;
+  top: 80px;
+  left: 135px;
+  justify-content: center;
+  gap: var(--gap-68xl);
+  font-size: var(--font-size-20px);
+  color: var(--secondary-white);
+}
+
+.frame-parent3,
+.send-mail {
+  display: flex;
+  justify-content: flex-start;
+}
+.send-mail {
+  border-radius: var(--br-9xs);
+  border: 1.5px solid var(--secondary-white);
+  box-sizing: border-box;
+  width: 217px;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-xs) 0 var(--padding-xs) var(--padding-base);
+  gap: var(--gap-13xl);
+  font-size: var(--font-size-m);
+  font-family: var(--font-family-poppins);
+}
+
+.frame-parent3 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--font-size-l);
+  font-family: var(--font-family-inter);
+}
+
+.logo-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+}
+
+.logo {
+    position: relative;
+    width: 118px;
+    height: 24px;
+}
+
+.exclusive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+}
+
+.subscribe {
+    position: relative;
+    font-size: var(--font-size-20px);
+    line-height: 28px;
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-poppins);
+  }
+
+.get-10-off {
+    position: relative;
+    line-height: 24px;
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-poppins);
+}
+
+.enter-your-email,
+.get-10-off {
+  position: relative;
+  line-height: 24px;
+}
+.get-10-off {
+  font-size: var(--font-size-m);
+  font-family: var(--font-family-poppins);
+}
+.enter-your-email {
+  opacity: 0.4;
+}
+
+.star-half-filled-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.exclusivegmailcom {
+    position: relative;
+    line-height: 24px;
+}
+
+.frame-parent2,
+.icon-facebook-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.frame-parent2 {
+  position: absolute;
+  top: 80px;
+  left: 135px;
+  justify-content: center;
+  gap: var(--gap-68xl);
+  font-size: var(--font-size-20px);
+  color: var(--secondary-white);
+}
+
+.support {
+    position: relative;
+    line-height: 28px;
+    font-weight: var(--font-weight-normal);
+}
+
+.bijoy-sarani-dhaka-dh-1515-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    font-size: var(--font-size-m);
+}
+
+
+.bijoy-sarani-dhaka {
+    display: inline-block;
+    width: 175px;
+  }
+.bijoy-sarani-dhaka,
+.exclusivegmailcom {
+    position: relative;
+    line-height: 24px;
+}
+
+.save-3-with-app-new-user-only-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+.save-3-with-app-new-user-only-parent {
+    gap: var(--gap-5xs);
+    font-size: var(---font-size-xs);
+}
+
+.save-3-with {
+    position: relative;
+    line-height: 18px;
+    font-weight: var(--font-weight-normal);
+    opacity: 0.7;
+}
+
+.summer-sale-for-all-swim-suits-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+}
+
+.qrcode-1-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+.googleplay-icon,
+.qr-code {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.googleplay-icon {
+    width: 110px;
+    height: 40px;
+  }
+
+.qr-code {
+  background-color: var(--primary-black);
+  width: 80px;
+  height: 80px;
+}
+
+.download-appstore-icon {
+    position: absolute;
+    top: 2.4px;
+    left: 2.4px;
+    border-radius: var(--br-9xs);
+    width: 105.2px;
+    height: 35.2px;
+    object-fit: cover;
+  }
+.appstore {
+    position: relative;
+    background-color: var(--primary-black);
+    width: 110px;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+.googleplay-parent,
+.save-3-with-app-new-user-only-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+.save-3-with-app-new-user-only-parent {
+    gap: var(--gap-5xs);
+    font-size: var(---font-size-xs);
+  }
+.frame-parent2,
+.icon-facebook-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+}
+
+.dropdown-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
