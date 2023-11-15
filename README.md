@@ -7,7 +7,7 @@
 
 Пока что в базе данных, где и хранятся мета-данные, всего 3 товара, но, т.к. это прототип, я посчитала такое количество достаточным для демонстрации основного функционала.
 
-<img src="[https://your-image-url.type](https://github.com/tivakhrusheva/js-api-homework/assets/91075802/2ca20262-20a9-4856-958d-eab8ea713f4f)" width="100" height="100">
+<img src="[https://your-image-url.type](https://github.com/tivakhrusheva/js-api-homework/assets/91075802/2ca20262-20a9-4856-958d-eab8ea713f4f)" width="10" height="1000">
 
 При успешном ответе от сервера на запрос полученные данные парсятся и используются для рендеринга HTML-кода страницы. 
 
