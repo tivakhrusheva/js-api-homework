@@ -9,8 +9,6 @@ const fetchCartJSON = async(user_id) => {
     }
     else {
     const items = await response.json();
-    console.log("items: " + JSON.stringify(items))
-    console.log(items['user_id']);
     return items
   }};
 

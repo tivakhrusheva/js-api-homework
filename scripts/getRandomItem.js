@@ -4,7 +4,6 @@ const API_URL = 'https://d5dqmrec9704nqgi2oe3.apigw.yandexcloud.net';
 const getItemJSON = async() => {
     const response = await fetch(API_URL + '/get_random_item');
     const items = await response.json();
-    console.log("items: " + JSON.stringify(items));
     return items
   };
 

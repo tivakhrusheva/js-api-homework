@@ -3,7 +3,6 @@ const API_URL = 'https://d5dqmrec9704nqgi2oe3.apigw.yandexcloud.net';
 
 export const addItemToBackend = async (userId, itemName, itemN, itemPrice, itemUrl) => {
     console.log("function addItemToBackend launched..")
-    console.log("userId " + userId)
     const data = {
                 "userId": userId,
                 "itemName": itemName,
@@ -32,7 +31,6 @@ export const addItemToBackend = async (userId, itemName, itemN, itemPrice, itemU
     .then(response => console.log(response))
     .then((resp) => resp.json())
     .then(function(response) {
-        console.info('fetch()', response);
         location.href = "cart-page.html";
         return response;
     })
